@@ -1,0 +1,12 @@
+# name of file should be application-prod.yml remove the (example)
+# our team by default gitignores application-prod.yml and does not use env variables
+spring:
+  datasource:
+    url: url-goes-here or ${url_as_env_variable}
+    username: username-goes-here or ${username_as_env_variable}
+    password: password-goes-here or ${password_as_env_variable}
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
