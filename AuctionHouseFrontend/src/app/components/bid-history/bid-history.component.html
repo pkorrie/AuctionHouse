@@ -1,0 +1,29 @@
+<div class="modal fade" [attr.id]="'art' + artId" tabindex="-1" [attr.aria-labelledby]="'art' + artId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" id="bidinfo">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Bid History</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modal-top">
+            <div class="form-group">
+              <div class="row">
+                <div *ngIf='bids.length > 0; else noBids' class="col-6">
+                  <div *ngFor='let bid of bids'>
+                    <div>bid id: {{bid.id}}</div>
+                    <div>bid amount: {{bid.amount}}</div>
+                    <div>bid artid: {{bid.artid}}</div>
+                    <div>bid bidderid: {{bid.bidderid}}</div>
+                  </div>
+                </div>
+                <ng-template #noBids>
+                  No bids have been placed for this item yet.
+                </ng-template>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

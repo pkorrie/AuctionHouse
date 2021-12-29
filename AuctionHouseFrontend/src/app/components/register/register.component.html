@@ -1,0 +1,41 @@
+  <div id="img">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body" id="modal-form">
+        <form>
+          <div class="form-group" id="regForm">
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating">
+                  <input [(ngModel)]="user['fname']" name="fname" type="name" class="form-control" id="floatingInput1" aria-describedby="usernameHelp"
+                    placeholder="john">
+                  <label for="floatingInput1" id="fName"> First Name</label>
+                </div>
+                <div class="form-floating">
+                  <input [(ngModel)]="user['pw']" name="pw" type="password" class="form-control" id="floatingInput3" placeholder="Password">
+                  <label for="floatingInput3" id="password2">Password</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-floating">
+                  <input [(ngModel)]="user['lname']" name="lname" type="name" class="form-control" id="floatingInput4" aria-describedby="usernameHelp"
+                    placeholder="Doe">
+                  <label for="floatingInput4" id="lName">Last Name </label>
+                </div>
+                <div class="form-floating">
+                  <input [(ngModel)]="user['uname']" name="uname" type="username" class="form-control" id="floatingInput5" aria-describedby="usernameHelp"
+                    placeholder="john123">
+                  <label for="floatingInput5" id="username2"> Username</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="submitBtn">
+            <button (click)="register()" type="button" class="btn btn-primary" id="Create">Register</button>
+          </div>
+          <a routerLink="/">Login</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>

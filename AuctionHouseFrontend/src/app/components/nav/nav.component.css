@@ -1,0 +1,29 @@
+
+#navbar{
+    background-color: #4D0B6F;   /* 2D0937...#1A094A */
+    justify-content: center;
+    /* background: linear-gradient(
+90deg,#240E50 0,#5F096A); */
+}
+
+/* #navBrand{
+    margin-left: 1rem;
+} */
+
+.navbar-nav{
+    margin-right: 5%;
+    flex-direction: inherit !important;
+   
+}
+
+.nav-item{
+    padding-right: 30px;
+}
+
+#acct{
+    color: #F3B043;
+}
+
+.modal-footer{
+    justify-content: center;
+}

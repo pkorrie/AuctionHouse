@@ -1,0 +1,16 @@
+.display-5 {
+    font-size: calc(0.425rem + 1.1vw);
+}
+
+#bids{
+    color: #65b5f6;
+    background-color: transparent;
+}
+
+#info{
+    margin-top: 3rem;
+}
+
+.btn{
+    margin-left: 1rem;
+}

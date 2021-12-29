@@ -1,0 +1,43 @@
+#page {
+    background-color: black;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.display-6 {
+    font-size: calc(1rem + 1vw);
+}
+
+#opt {
+    text-align: center;
+}
+
+#textH {
+    padding-top: 2rem;
+    color: aliceblue;
+    text-decoration: solid;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+.display-5 {
+    font-size: calc(1rem + 1vw);
+}
+
+
+#imgBtn {
+    color: #65b5f6;
+    background-color: transparent;
+    border: 1px solid #65b5f6;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 7rem;
+    margin-top: 3rem;
+    width: fit-content;
+
+}
+
+.card-body{
+    background-color: black;
+}

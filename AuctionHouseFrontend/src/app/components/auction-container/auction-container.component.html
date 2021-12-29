@@ -1,0 +1,11 @@
+<div class="row">
+    <ng-container class="col-8" *ngIf='auctions.length > 0; else noAuctions'>
+      <p>{{auctions.length}} art pieces are up for auction.</p>
+      <div *ngFor='let auction of auctions'>
+        <app-auction [auction]="auction"></app-auction>
+      </div>
+    </ng-container>
+    <ng-template #noAuctions>
+      All sold out; please try again later.
+    </ng-template>
+</div>

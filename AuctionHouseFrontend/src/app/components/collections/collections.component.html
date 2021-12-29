@@ -1,0 +1,23 @@
+<app-nav></app-nav>
+<div id="page">
+<ng-container>
+  <div *ngIf='ownedArt.length > 0; else none'>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor='let art of ownedArt'>
+      <div class="col">
+        <div class="card h-100 text-white bg-transparent" style="width: 18rem;">
+          <img [src]='art["url"]' class="card-img-top" alt="owned-art">
+          <div class="card-body">
+            <p class="card-text bg-transparent"  *ngIf='art["name"]'>Name: {{art["name"]}}</p>
+            <p class="card-text bg-transparent"  *ngIf='art["artist"]'>artist: {{art["artist"]}}</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #none>
+    none owned
+  </ng-template>
+</ng-container>
+</div>

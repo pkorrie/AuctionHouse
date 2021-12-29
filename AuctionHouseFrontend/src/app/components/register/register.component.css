@@ -1,0 +1,72 @@
+#img {
+    background-image: url("https://t3.ftcdn.net/jpg/04/42/89/90/360_F_442899020_JN3rsWrBmf2wvhmKxGsUmFVWj2obApyz.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: rebeccapurple;
+    padding: 1rem;
+ }
+
+ .bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+}
+
+#log-sub{
+    margin-top: 10px;
+}
+
+#logForm {
+    margin-right: 19%;
+    margin-left: 19%;
+    margin-top: 5%;
+}
+/* #model-form{
+    margin-left: 76px;
+} */
+h2{
+    text-align: center;
+}
+
+.form-floating{
+    margin-bottom: 2rem;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#submitBtn{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content{
+    margin-top: 5rem;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    
+    
+}
+
+.modal-body{
+    padding: 3rem;
+}
+

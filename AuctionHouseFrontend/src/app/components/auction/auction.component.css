@@ -1,0 +1,32 @@
+.display-5 {
+    font-size: calc(0.425rem + 1.1vw);
+}
+
+    
+    #bids{
+        color: #65b5f6;
+        background-color: transparent;
+    }
+
+    #input{
+        width: 13rem;
+    }
+
+    span{
+        color: aliceblue;
+        background-color: black;
+    }
+
+    #sub{
+        background-color: green;
+    }
+
+    .form-control{
+        color: aliceblue;
+        background-color: black;
+    }
+
+    #info{
+        margin-top: 2rem;
+    }
+    

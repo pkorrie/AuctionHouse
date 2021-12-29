@@ -1,0 +1,14 @@
+#page{
+    color: aliceblue;
+    margin: 3rem;
+}
+
+#inputPassword2{
+    width: fit-content;
+    background-color: black;
+    color: aliceblue;
+}
+
+.display-6 {
+    font-size: calc(1rem + 1vw);
+}

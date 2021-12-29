@@ -1,0 +1,120 @@
+<html>
+    <head></head>
+    <nav class="navbar navbar-expand sticky-top" id= "navbar">
+      <a class="navbar-brand" id="navBrand" href="manager.html">ERS</a>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class=" icon" id="person" href="#bd-example-modal-lg" role="button" data-toggle="modal" data-target=".bd-example-modal-lg" data-trigger="focus" title="Account"><i class="bi bi-person"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class=" icon" href="login.html" id="logout" role="button" data-toggle="popover" data-trigger="focus" title="Logout"><i class="bi bi-box-arrow-right"></i></a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+    <body id="img">
+        <div class="bg-text">
+        <h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+AUTH_API = '${environment.API_URL}/api/auth/';
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+//sending HTTP request post reqt /auth
+/** POST: add a new hero to the server */
+// addHero(hero: Hero): Observable<Hero> {
+//   return this.http.post<Hero>(this.heroesUrl, hero, this.httpOptions).pipe(
+//     tap((newHero: Hero) => this.log(`added hero w/ id=${newHero.id}`)),
+//     catchError(this.handleError<Hero>('addHero'))
+//   );
+// }
+// this.http.post<string>('localhost:8080/auth',{username:this.username, password:this.password},this.httpOptions).pipe(catchError(console.log("we have a problem")))
+
+
+    </body>
+    <style>
+
+        body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#img {
+  /* The image used */
+  /* background-image: url("https://blog.spoongraphics.co.uk/wp-content/uploads/2021/02/thumbnail-3.jpg"); */
+  /* background-image: url("https://wallpaperaccess.com/full/1941647.jpg"); */
+  background-image: url("https://t3.ftcdn.net/jpg/04/42/89/90/360_F_442899020_JN3rsWrBmf2wvhmKxGsUmFVWj2obApyz.jpg");
+
+
+ 
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar{
+    background-color: #2E0A36;   /* 2D0937 */
+   
+}
+#navBrand{
+    color: #F3CA5E;
+    font-size: 2.25rem;
+}
+
+#home{
+    color: aliceblue;
+    
+}
+.icon{
+    color: aliceblue;
+    font-size: 2rem;
+}
+.navbar-nav{
+    margin-right: 5%;
+}
+
+.nav-item{
+    padding-right: 15px;
+}
+
+.pop{
+    display: none;
+}
+    </style>
+</html>

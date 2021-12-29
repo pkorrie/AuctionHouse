@@ -1,0 +1,17 @@
+<app-nav></app-nav>
+<div id="page">
+    <div class="container">
+        <ng-container>
+            <div class="row">
+                <div class="col-8">
+                    <button (click)="createAuction()" type="button" class="btn" id="imgBtn">Create New Auction</button>
+                    <button *ngIf='auctions.length === 0' (click)="getAuctions()" type="button" class="btn"
+                        id="imgBtn">Refresh Auctions</button>
+                </div>
+            </div>
+            <div *ngFor='let auction of auctions'>
+                <app-auction-as-auctioneer [auction]='auction'></app-auction-as-auctioneer>
+            </div>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+  <hr>
+  <div class="row">
+    <div *ngIf='auction["art"]["url"]' class="col" >
+    <img [src]='auction["art"]["url"]'>
+  </div>
+
+  <div *ngIf='auction["art"]["id"]' class="col" id="info">
+      <h4 class="display-5" *ngIf='auction["art"]["name"]'>Name: {{auction["art"]["name"]}}</h4>
+      <h5 class="display-5" *ngIf='auction["art"]["artist"]'>Artist: {{auction["art"]["artist"]}}</h5>
+      <p class="display-5">Highest Bid: ${{auction["highestBid"]}}</p>
+      <button (click)="getAuction()" type="button" class="btn" id="bids" data-bs-toggle="modal" [attr.data-bs-target]="'#art' + auction['art']['id']">
+        See bid history
+      </button>
+      <div class="input-group mb-3" id="input">
+        <span class="input-group-text">$</span>
+        <input [(ngModel)]="unsavedBid" name="unsavedBid" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        <span (click)='placeBid(auction["art"]["id"])' type="button" class=" input-group-text" id="sub">
+          Place Bid
+        </span>
+      </div>
+  </div>
+  <app-bid-history [artId]='auction["art"]["id"]' [bids]='auction["bids"]'></app-bid-history>
+</div>

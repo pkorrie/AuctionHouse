@@ -1,0 +1,33 @@
+#page {
+    background-color: black;
+    height: 100vh;
+    color: aliceblue;
+}
+
+
+.display-6 {
+    font-size: calc(1rem + 1vw);
+}
+
+.input-group-text {
+    color: aliceblue;
+    background-color: black;
+}
+
+.form-control {
+    background-color: black;
+    color: aliceblue;
+    flex: .5 .5 auto;
+}
+
+#sub {
+    color: aliceblue;
+}
+
+.container {
+    padding-top: 1rem;
+}
+
+#colu-top {
+    padding-top: 5rem;
+}

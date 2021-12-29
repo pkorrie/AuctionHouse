@@ -1,0 +1,22 @@
+<div id="img">
+  <div class="bg-text">
+    <h2>Auction House</h2>
+    <form id="logForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+        <input [(ngModel)]="uname" type="email" name="username" class="form-control" id="username"
+          aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input [(ngModel)]="pw" type="password" name="password" class="form-control" id="password"
+          placeholder="Password">
+      </div>
+      <button id="log-sub" type="submit" class="btn btn-primary" (click)='login()'>Submit</button>
+      <h6>New user? <a routerLink="/register">Register here</a></h6>
+    </form>
+    <div id="error">
+    </div>
+  </div>
+</div>
